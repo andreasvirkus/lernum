@@ -1,6 +1,6 @@
 {
-  "name": "lernum",
-  "short_name": "lernum",
+  "name": "Lernum",
+  "short_name": "Lernum",
   "icons": [
     {
       "src": "/static/img/icons/android-chrome-192x192.png",
@@ -15,6 +15,6 @@
   ],
   "start_url": "/index.html",
   "display": "standalone",
-  "background_color": "#000000",
+  "background_color": "#222",
   "theme_color": "#4DBA87"
 }

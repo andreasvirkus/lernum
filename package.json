@@ -1,6 +1,6 @@
 {
   "name": "lernum",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A reading, listening, and discovery PWA for the knowledge-hungry.",
   "author": "Andreas Virkus <write@andreasvirkus.me> (andreasvirkus.me)",
   "private": true,
@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "showdown": "^1.8.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
@@ -88,6 +89,6 @@
   "browserslist": [
     "> 1%",
     "last 2 versions",
-    "not ie <= 8"
+    "not ie <= 10"
   ]
 }

@@ -1,54 +1,69 @@
 <template>
-  <div id="app">
+  <div id="app" class="app-container">
     <header>
-      <span>Vue.js PWA</span>
+      <h1><router-link to="/">📓</router-link></h1>
+
+      <navigation />
     </header>
     <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
+      <img class="logo" src="./assets/logo.svg" alt="Learnig app">
+
       <router-view></router-view>
     </main>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+  import Navigation from '@/components/Navigation'
+
+  export default {
+    name: 'app',
+    components: { Navigation }
+  }
 </script>
 
 <style>
-body {
-  margin: 0;
-}
+  body {
+    margin: 0;
+  }
 
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
+  .app-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+  }
 
-main {
-  text-align: center;
-  margin-top: 40px;
-}
+  main {
+    flex: 1;
+    padding-top: 2em;
+    width: 100%;
+    max-width: 45em;
+    margin: 0 auto;
+  }
 
-header {
-  margin: 0;
-  height: 56px;
-  padding: 0 16px 0 24px;
-  background-color: #35495E;
-  color: #ffffff;
-}
+  .logo {
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+  }
 
-header span {
-  display: block;
-  position: relative;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: .02em;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-top: 16px;
-}
+  header {
+    margin: 0;
+    padding: 0.5em 2em;
+    background-color: #35495E;
+    color: #ffffff;
+  }
+
+  header h1 {
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: .02em;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding-top: 16px;
+    margin-bottom: 2em;
+  }
 </style>
