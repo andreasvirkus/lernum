@@ -44,6 +44,10 @@ https://dribbble.com/shots/3122340-Rise-Blocks-authoring
   - Initially for self
   - Later also public ranking
 - Auth with Firebase
+- Submitting resources
+  - Think of how to validate user-added resources; PRs seem the easiest atm but would mean we store
+  some of the resources in our own repo, which doesn't seem ideal (maybe create a separate `lernum-resouces`
+  repo for those)
 
 ## Build Setup
 
