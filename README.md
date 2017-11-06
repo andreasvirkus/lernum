@@ -6,13 +6,13 @@ _A reading, listening, and discovery platform for the knowledge-hungry._
 
 ---
 
-**TL;DR:**  
+**TL;DR:**
 A PWA + desktop app that brings the free
 coding resources and tech-related study material to the user in a readable fashion.
 
-**I-care-a-bit version:**  
+**I-care-a-bit version:**
 Lernum is a web (and desktop) app that allows you to auth with GitHub (..and Google/Facebook/Twitter?) and
-gather valuable learning resources (podcasts, conference videos, articles, tutorials, e-books, etc.), 
+gather valuable learning resources (podcasts, conference videos, articles, tutorials, e-books, etc.),
 read/view/listen to them, rate them and also discover new resources based on previous preferences.
 
 > A so-called netflix for the knowledge-hungry.
@@ -20,7 +20,7 @@ read/view/listen to them, rate them and also discover new resources based on pre
 ---
 
 There'd be a convenient discovery, rating and sorting system. The main focus is a beautiful/clean/sleek
-reading or watching mode to focus on consuming the learning material. Idea/direction for design:  
+reading or watching mode to focus on consuming the learning material. Idea/direction for design:
 https://dribbble.com/shots/3122340-Rise-Blocks-authoring
 
 ---
@@ -32,6 +32,7 @@ https://dribbble.com/shots/3122340-Rise-Blocks-authoring
   - Saving of basic resources (links + plain text)
   - Categories/types of resources
 - Initial design
+- Generate favicon and PWA icons
 - Markdown, pdf (& other formats?) reader
 - Podcast, audio book & video players
 - Make it possible to parse/crawl `awesome-*` lists on GitHub or other types of learning resources
