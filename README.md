@@ -28,14 +28,22 @@ https://dribbble.com/shots/3122340-Rise-Blocks-authoring
 
 ## TODO
 
+- Make it possible to parse/crawl `awesome-*` lists on GitHub or other types of learning resources
 - Set up Vue + Firebase
   - Saving of basic resources (links + plain text)
   - Categories/types of resources
-- Initial design
-- Generate favicon and PWA icons
 - Markdown, pdf (& other formats?) reader
+- Initial design
+  - Icons + link interactions for sidenav
+  - Transitions for router
+  - Animating appended HTML (v-html)
+  - ?
+  - Colour palette!
+  - Footer
+- UX enhancements
+  - Reading mode toggle
+- Generate favicon and PWA icons
 - Podcast, audio book & video players
-- Make it possible to parse/crawl `awesome-*` lists on GitHub or other types of learning resources
 - Sync with IndexedDB or local storage
   - So everything is saved (by default, your browser is your user and registration is only necessary
   if you want a x-device experience)

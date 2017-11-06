@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Landing from '@/components/Landing'
-import Discover from '@/components/Discover'
+
+import About from '@/pages/About'
+import Landing from '@/pages/Landing'
+import Discover from '@/pages/Discover'
 
 Vue.use(Router)
 
@@ -12,6 +14,11 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Landing
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: About
     },
     {
       path: '/discover/:topic?',

@@ -29,12 +29,11 @@
       fetch(entry).then(rs => rs.text())
         .then(rs => {
           this.raw = rs
-          this.content = this.raw.substring(this.raw.indexOf('## Contents'))
+          this.content = this.raw.substring(this.raw.indexOf('## Contents'), this.raw.indexOf('## License'))
         }).catch(err => console.log('Could not fetch from Awesome List!', err))
     },
     methods: {
       navigate(event) {
-        console.log('clicky!', event.target.hash)
         this.hash = event.target.hash.substring(1)
         this.$router.push({
           name: 'Discover',

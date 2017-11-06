@@ -5,19 +5,24 @@
       <navigation />
     </header>
     <main>
-      <img class="logo" src="./assets/logo.svg" alt="Learnig app">
+      <router-link to="/">
+        <img class="logo" src="./assets/logo.svg" alt="Learnig app">
+      </router-link>
 
       <router-view></router-view>
     </main>
+
+    <footing></footing>
   </div>
 </template>
 
 <script>
   import Navigation from '@/components/Navigation'
+  import Footing from '@/components/Footing'
 
   export default {
     name: 'app',
-    components: { Navigation }
+    components: { Navigation, Footing }
   }
 </script>
 
@@ -29,7 +34,8 @@
   .app-container {
     display: flex;
     min-height: 100vh;
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    flex-direction: column;
+    font-family: 'Raleway', 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
@@ -50,6 +56,10 @@
   }
 
   header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
     margin: 0;
     padding: 0.5em 2em;
     background-color: #35495E;
@@ -64,5 +74,42 @@
     box-sizing: border-box;
     padding-top: 16px;
     margin-bottom: 2em;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+  }
+
+  h1, h2 {
+    font-weight: normal;
+  }
+
+  h3 {
+    font-style: italic;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 10px;
+  }
+
+  a {
+    color: #35495E;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  code {
+    font-size: 1.4em;
+    /* padding: 4px; */
+    background-color: #35495E;
+    color: #E8E8E8;
   }
 </style>

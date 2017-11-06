@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Discover:</h1>
+    <h1 class="align-center">Discover</h1>
 
     <parser />
   </div>
@@ -16,7 +16,5 @@
 </script>
 
 <style>
-  a {
-    color: #223;
-  }
+
 </style>
