@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>lernum</title>
+    <title>Lernum</title>
     <link rel="icon" type="image/png" sizes="32x32" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/favicon-16x16.png">
     <!--[if IE]><link rel="shortcut icon" href="/static/img/icons/favicon.ico"><![endif]-->
@@ -28,9 +28,14 @@
   <body>
     <noscript>
       This is your fallback content in case JavaScript fails to load.
+      TODO: Add &lt;noscript&gt; content! (This app requires JS to run, etc.)
     </noscript>
+
+    <!-- TODO: Add preload styles for slow connections -->
+    <!-- Add them as above the fold styles that style the #app
+      selector and remove the style block in Vue $vm created hook -->
     <div id="app"></div>
-    <!-- Todo: only include in production -->
+    <!-- TODO: only include in production -->
     <%= htmlWebpackPlugin.options.serviceWorkerLoader %>
     <!-- built files will be auto injected -->
   </body>

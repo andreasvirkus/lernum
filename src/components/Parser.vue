@@ -12,11 +12,11 @@
 
   export default {
     name: 'parser',
-    // props: ['resource'],
     data() {
       return {
         raw: '',
         content: '',
+        baseURI: entry,
       }
     },
     computed: {
@@ -35,8 +35,6 @@
           this.raw = decoder.decode(value)
           this.content = this.raw.substring(this.raw.indexOf('## Contents'))
         }).catch(err => console.log('Could not fetch from Awesome List!', err))
-
-        // this.parse()
       })
     },
   }
