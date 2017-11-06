@@ -15,6 +15,10 @@
 </script>
 
 <style>
+  nav {
+    padding-top: 3em;
+  }
+
   nav a {
     display: block;
     text-decoration: none;

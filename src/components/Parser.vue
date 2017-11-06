@@ -1,6 +1,6 @@
 <template>
   <transition>
-    <div v-html="parsed"></div>
+    <div v-html="parsed" @click.prevent.stop="navigate"></div>
   </transition>
 </template>
 
@@ -17,6 +17,7 @@
         raw: '',
         content: '',
         baseURI: entry,
+        hash: '',
       }
     },
     computed: {
@@ -25,18 +26,22 @@
       }
     },
     created() {
-      const req = new Request(entry)
-
-      fetch(req).then(rs => {
-        const reader = rs.body.getReader()
-
-        reader.read().then(({ done, value }) => {
-          const decoder = new TextDecoder('utf-8')
-          this.raw = decoder.decode(value)
+      fetch(entry).then(rs => rs.text())
+        .then(rs => {
+          this.raw = rs
           this.content = this.raw.substring(this.raw.indexOf('## Contents'))
         }).catch(err => console.log('Could not fetch from Awesome List!', err))
-      })
     },
+    methods: {
+      navigate(event) {
+        console.log('clicky!', event.target.hash)
+        this.hash = event.target.hash.substring(1)
+        this.$router.push({
+          name: 'discovery',
+          params: { topic: this.hash }
+        })
+      }
+    }
   }
 </script>
 

@@ -1,8 +1,7 @@
 <template>
   <div id="app" class="app-container">
     <header>
-      <h1><router-link to="/">📓</router-link></h1>
-
+      <!-- <h1><router-link to="/">📓</router-link></h1> -->
       <navigation />
     </header>
     <main>
