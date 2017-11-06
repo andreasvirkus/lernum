@@ -37,7 +37,7 @@
         console.log('clicky!', event.target.hash)
         this.hash = event.target.hash.substring(1)
         this.$router.push({
-          name: 'discovery',
+          name: 'Discover',
           params: { topic: this.hash }
         })
       }

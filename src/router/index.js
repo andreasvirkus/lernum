@@ -14,7 +14,7 @@ export default new Router({
       component: Landing
     },
     {
-      path: '/discover',
+      path: '/discover/:topic?',
       name: 'Discover',
       component: Discover
     },
