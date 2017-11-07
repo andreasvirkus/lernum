@@ -18,6 +18,9 @@
       return {
         raw: '',
         hash: '',
+        location: {
+          base: '',
+        },
       }
     },
     computed: {
@@ -63,9 +66,15 @@
             params: { topic: this.hash }
           })
         } else if (url) {
+          console.log('nagivating to:', url)
           if (url.startsWith('https://github.com/')) {
-            let queryUrl = `${base}${url.substring(url.indexOf('.com') + 4)}/master/README.md`
+            this.location.base = url.substring(url.indexOf('.com') + 4)
+            let queryUrl = `${base}${this.location.base}/master/README.md`
             console.log('query new list:', queryUrl)
+            this.getList(queryUrl)
+          } else if (!url.startsWith('http')) {
+            let queryUrl = `${base}${this.location.base}/master/${hash}`
+            console.log('query item from this repo', queryUrl)
             this.getList(queryUrl)
           } else {
             console.log(`External resource reached! Would now open a modal/prompt to ask the user

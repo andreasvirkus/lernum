@@ -29,6 +29,8 @@ https://dribbble.com/shots/3122340-Rise-Blocks-authoring
 ## TODO
 
 - Make it possible to parse/crawl `awesome-*` lists on GitHub or other types of learning resources
+  - Navigation (cache previous list OR REQUEST so it's easy to go back)
+  - 
 - Set up Vue + Firebase
   - Saving of basic resources (links + plain text)
   - Categories/types of resources
