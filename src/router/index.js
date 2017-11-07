@@ -25,5 +25,20 @@ export default new Router({
       name: 'Discover',
       component: Discover
     },
+    {
+      path: '/reader/:book?',
+      name: 'Read',
+      component: Discover
+    },
+    {
+      path: '/listener/:podcast?',
+      name: 'Listen',
+      component: Discover
+    },
+    {
+      path: '/viewer/:video?',
+      name: 'View',
+      component: Discover
+    },
   ]
 })

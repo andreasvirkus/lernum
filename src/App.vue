@@ -27,6 +27,10 @@
 </script>
 
 <style>
+  /* To prevent content jump */
+  html {
+    margin-left: calc(100vw - 100%);
+  }
   body {
     margin: 0;
   }

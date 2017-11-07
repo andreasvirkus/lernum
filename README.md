@@ -42,6 +42,7 @@ https://dribbble.com/shots/3122340-Rise-Blocks-authoring
   - Footer
 - UX enhancements
   - Reading mode toggle
+  - Breadcrumbs for Discovery tab
 - Generate favicon and PWA icons
 - Podcast, audio book & video players
 - Sync with IndexedDB or local storage

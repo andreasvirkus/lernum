@@ -1,3 +1,14 @@
-const entry = 'https://rawgit.com/sindresorhus/awesome/master/readme.md'
+const base = 'https://rawgit.com'
+// TODO: Loop through all entries under Parser/Crawler component
+const entries = [
+  'https://rawgit.com/sindresorhus/awesome/master/readme.md',
+  'https://github.com/bayandin/awesome-awesomeness',
+]
 
-export { entry }
+export {
+  base,
+  entries,
+}
+
+// For initial testing
+export const entry = entries[0]
